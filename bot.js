@@ -197,7 +197,7 @@ client.on('message', message => {
 client.on('message', message => {
 if (message.content.startsWith(prefix + 'calc')) {
     if(!message.channel.guild) return message.reply(' Error : \` Guild Command \`');
-           var Canvas = module.require('canvas');
+           
            var jimp = module.require('jimp');
    
     const w = ['./math.png'];
@@ -1293,7 +1293,7 @@ client.on('message', message => {
 
 
 if(command == "draw") {
-    var Canvas = require('canvas')
+  
   , Image = new Canvas.Image
   , canvas = new Canvas(450, 170)
   , ctx = canvas.getContext('2d');
@@ -1745,7 +1745,7 @@ client.on('message', async message => {
 
 
 const jimp = require('jimp');
-const Canvas = require('canvas');
+
 client.on('guildMemberAdd', member => {
      const welcomer =  member.guild.channels.find('name', 'welcome');
 const w = ['./w1.png'];
