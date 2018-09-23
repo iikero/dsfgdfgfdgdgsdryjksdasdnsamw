@@ -202,9 +202,9 @@ if (message.content.startsWith(prefix + 'calc')) {
    
     const w = ['./math.png'];
    
-            let Image = Canvas.Image,
-                canvas = new Canvas(802, 404),
-                ctx = canvas.getContext('2d');
+            let Image = .Image,
+                 = new (802, 404),
+                ctx = .getContext('2d');
             ctx.patternQuality = 'bilinear';
             ctx.filter = 'bilinear';
             ctx.antialias = 'subpixel';
@@ -213,7 +213,7 @@ if (message.content.startsWith(prefix + 'calc')) {
             ctx.shadowBlur = 2;
             fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
                 if (err) return console.log(err);
-                let BG = Canvas.Image;
+                let BG = .Image;
                 let ground = new Image;
                 ground.src = Background;
                 ctx.drawImage(ground, 0, 0, 802, 404);
@@ -257,7 +257,7 @@ var ment = message.mentions.users.first();
                            
                                 ctx.beginPath();
                                 ctx.stroke();
-                              message.channel.sendFile(canvas.toBuffer());
+                              message.channel.sendFile(.toBuffer());
                            
                            
                          
@@ -1294,13 +1294,13 @@ client.on('message', message => {
 
 if(command == "draw") {
   
-  , Image = new Canvas.Image
-  , canvas = new Canvas(450, 170)
-  , ctx = canvas.getContext('2d');
+  , Image = new .Image
+  ,  = new (450, 170)
+  , ctx = .getContext('2d');
   ctx.font = '30px Impact';
   let args = message.content.split(" ").slice(1);
   
-Image.src = canvas.toBuffer();
+Image.src = .toBuffer();
 
     console.log(Image);
 ctx.drawImage(Image, 0, 0, Image.width / 470, Image.height / 170);
@@ -1311,7 +1311,7 @@ ctx.beginPath();
 ctx.lineTo(50, 102);
 ctx.stroke();
 
-message.channel.sendFile(canvas.toBuffer());
+message.channel.sendFile(.toBuffer());
 }
 }).on('ready', () => {
 
@@ -1349,14 +1349,14 @@ client.on('message', message => {
 
 
 if(command == "draw") {
-    var Canvas = require('canvas')
-  , Image = new Canvas.Image
-  , canvas = new Canvas(450, 170)
-  , ctx = canvas.getContext('2d');
+    var  = require('')
+  , Image = new .Image
+  ,  = new (450, 170)
+  , ctx = .getContext('2d');
   ctx.font = '30px Impact';
   let args = message.content.split(" ").slice(1);
   
-Image.src = canvas.toBuffer();
+Image.src = .toBuffer();
 
     console.log(Image);
 ctx.drawImage(Image, 0, 0, Image.width / 470, Image.height / 170);
@@ -1367,7 +1367,7 @@ ctx.beginPath();
 ctx.lineTo(50, 102);
 ctx.stroke();
 
-message.channel.sendFile(canvas.toBuffer());
+message.channel.sendFile(.toBuffer());
 }
 }).on('ready', () => {
 
@@ -1750,12 +1750,12 @@ client.on('guildMemberAdd', member => {
      const welcomer =  member.guild.channels.find('name', 'welcome');
 const w = ['./w1.png'];
  
-         let Image = Canvas.Image,
-            canvas = new Canvas(400, 200),
-            ctx = canvas.getContext('2d');
+         let Image = .Image,
+             = new (400, 200),
+            ctx = .getContext('2d');
         fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
             if (err) return console.log(err);
-            let BG = Canvas.Image;
+            let BG = .Image;
             let ground = new Image;
             ground.src = Background;
             ctx.drawImage(ground, 0, 0, 400, 200);
@@ -1780,7 +1780,7 @@ const w = ['./w1.png'];
                         ctx.textAlign = "center";
                         ctx.fillText(member.user.username, 200, 150);
  
-                let Avatar = Canvas.Image;
+                let Avatar = .Image;
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
@@ -1791,7 +1791,7 @@ const w = ['./w1.png'];
                          
                
                              
-welcomer.sendFile(canvas.toBuffer())
+welcomer.sendFile(.toBuffer())
  
  
  
@@ -1873,9 +1873,9 @@ if(!message.channel.guild) return;
          }
   moment.locale('ar');
     const w = ['../id1.png','../id2.png','../id3.png','../id4.png','../id5.png']
-        let Image = Canvas.Image,
-            canvas = new Canvas(500, 500),
-            ctx = canvas.getContext('2d');
+        let Image = .Image,
+             = new (500, 500),
+            ctx = .getContext('2d');
         ctx.patternQuality = 'bilinear';
         ctx.filter = 'bilinear';
         ctx.antialias = 'subpixel';
@@ -1884,7 +1884,7 @@ if(!message.channel.guild) return;
         ctx.shadowBlur = 2;
         fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
             if (err) return console.log(err);
-            let BG = Canvas.Image;
+            let BG = .Image;
             let ground = new Image;
             ground.src = Background;
             ctx.drawImage(ground, 0, 0, 500, 500);
@@ -1961,7 +1961,7 @@ if(!message.channel.guild) return;
                         ctx.fillText(`${status}`, 380, 450);//ALPHACODE
                         
                         //Avatar
-                        let Avatar = Canvas.Image;
+                        let Avatar = .Image;
                         let ava = new Avatar;
                         ava.src = buf;
                         ctx.beginPath();
@@ -1970,7 +1970,7 @@ if(!message.channel.guild) return;
                         ctx.clip();
                         ctx.drawImage(ava, 185, 172, 130, 130 );
                          
-     message.channel.sendFile(canvas.toBuffer())//ALPHACODE
+     message.channel.sendFile(.toBuffer())//ALPHACODE
 })
    })
 
@@ -2844,7 +2844,7 @@ client.on('message' , message => {
       .then((new_new_message) => {
         require('./xo.js')(client, message, new_new_message, player1_id, player2_id, turn_id, symbol, symbols, grid_message);
       })
-      .then(console.log("Successful tictactoe listener initialization"))
+      .then(console.log("Suaccessful tictactoe listener initialization"))
       .catch(console.error);
     })
     .then(console.log("Successful tictactoe react initialization"))
@@ -2852,7 +2852,7 @@ client.on('message' , message => {
   }
   else {
     message.reply(` :anger: \`Use : ${prefix}xo @player1 @player2\``)
-    .then(console.log("Successful error reply"))
+    .then(console.log("Successful error reply"))a
     .catch(console.error);
   }
 }
